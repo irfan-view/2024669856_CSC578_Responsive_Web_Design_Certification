@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UiTM iStudent Portal Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">UiTM iStudent Portal Satisfaction Survey</h1>
+    
+    <p id="description">Help us improve the digital experience for all UiTM students.</p>
+
+    <form id="survey-form">
+        
+        <div class="form-group">
+            <label id="name-label" for="name">Full Name</label>
+            <input id="name" type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Student Email</label>
+            <input id="email" type="email" placeholder="e.g. 2024123456@student.uitm.edu.my" required>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Current Semester</label>
+            <input id="number" type="number" min="1" max="8" placeholder="1 - 8">
+        </div>
+
+        <div class="form-group">
+            <p>Which campus are you currently based in?</p>
+            <select id="dropdown" required>
+                <option disabled selected value>Select Campus</option>
+                <option value="kuala-terengganu">UiTM Kuala Terengganu</option>
+                <option value="dungun">UiTM Dungun</option>
+                <option value="shah-alam">UiTM Shah Alam</option>
+                <option value="puncak-alam">UiTM Puncak Alam</option>
+                <option value="other">Other Campus</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend the current iStudent Portal to new students?</p>
+            <label>
+                <input name="recommend" value="highly" type="radio" checked> Highly Recommend
+            </label>
+            <label>
+                <input name="recommend" value="neutral" type="radio"> Neutral
+            </label>
+            <label>
+                <input name="recommend" value="not-recommend" type="radio"> Not Recommended
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Which portal features do you use most frequently? (Check all that apply)</p>
+            <label><input type="checkbox" value="course-reg"> Course Registration</label>
+            <label><input type="checkbox" value="exam-result"> Exam Results</label>
+            <label><input type="checkbox" value="fees"> Fee Payment</label>
+            <label><input type="checkbox" value="hostel"> Hostel Booking</label>
+            <label><input type="checkbox" value="timetable"> Class Timetable</label>
+            <label><input type="checkbox" value="library"> Digital Library</label>
+        </div>
+
+        <div class="form-group">
+            <p>Any suggestions to improve the iStudent Portal UI/UX?</p>
+            <textarea id="comments" placeholder="Enter your feedback here..."></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>
